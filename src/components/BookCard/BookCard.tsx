@@ -11,6 +11,7 @@ import { useNavigate } from "react-router-dom";
 
 interface BookCardProps {
   bookData: BookList[];
+  
 }
 
 const BookCard: React.FC<BookCardProps> = ({ bookData }) => {
