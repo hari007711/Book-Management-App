@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import type { BookList } from "../Header/Header";
 import "./BookCard.scss";
 import bookImg from "../../assets/Book1.jfif";
@@ -7,11 +7,12 @@ import greenImg from "../../assets/greenCircle.png";
 import orangeImg from "../../assets/orangeCircle.png";
 import favBefore from "../../assets/favBefore.png";
 import favAfter from "../../assets/favAfter.png";
+
 import { useNavigate } from "react-router-dom";
 
 interface BookCardProps {
   bookData: BookList[];
-  
+
 }
 
 const BookCard: React.FC<BookCardProps> = ({ bookData }) => {

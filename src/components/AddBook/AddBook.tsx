@@ -44,12 +44,12 @@ const AddBook: React.FC<AddBookProps> = ({ onClose, book }) => {
   const [titleErrorMsg, setTitleErrorMsg] = useState<string>("");
   const [authorErrorMsg, setAuthorErrorMsg] = useState<string>("");
   const [genreErrorMsg, setGenreErrorMsg] = useState<string>("");
-  const [yearErrorMsg, setYearErrorMsg] = useState<string>("");
+  // const [yearErrorMsg, setYearErrorMsg] = useState<string>("");
   const [previewImgErrorMsg, setPreviewImgErrorMsg] = useState<string>("");
   const [description, setDescription] = useState<string>(
     book?.description || ""
   );
-  const [descErrorMsg, setDescErrorMsg] = useState<string>("");
+  // const [descErrorMsg, setDescErrorMsg] = useState<string>("");
 
   useEffect(() => {
     if (book) {
@@ -92,7 +92,7 @@ const AddBook: React.FC<AddBookProps> = ({ onClose, book }) => {
       check = true;
     }
     if (year === "" || year === undefined) {
-      setYearErrorMsg("Please Enter Published Year");
+      // setYearErrorMsg("Please Enter Published Year");
       check = true;
     }
     if (previewImage === "" || previewImage === undefined) {
@@ -100,7 +100,7 @@ const AddBook: React.FC<AddBookProps> = ({ onClose, book }) => {
       check = true;
     }
     if (description === "" || description === undefined) {
-      setDescErrorMsg("Please Enter Description");
+      // setDescErrorMsg("Please Enter Description");
       check = true;
     }
     if (!check) {
@@ -280,7 +280,7 @@ const AddBook: React.FC<AddBookProps> = ({ onClose, book }) => {
                   value={year}
                   onChange={(e) => {
                     setYear(e.target.value);
-                    setYearErrorMsg("");
+                    // setYearErrorMsg("");
                   }}
                 />
 

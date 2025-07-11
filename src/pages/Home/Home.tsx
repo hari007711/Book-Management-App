@@ -3,11 +3,10 @@ import "../../components/Header/Header.scss";
 import InfoCard from "../../components/InfoCard/InfoCard";
 import ToggleSwitch from "../../components/common/ToggleSwitch";
 import BookCard from "../../components/BookCard/BookCard";
-import booksListData from "../../components/common/DummyData";
 import AddBook from "../../components/AddBook/AddBook";
 import About from "../About/About";
 import "./Home.scss";
-import { Navigate, useNavigate, useParams } from "react-router-dom";
+// import {  useNavigate, useParams } from "react-router-dom";
 
 export interface BookStatus {
   text: string;
@@ -47,16 +46,15 @@ const Home: React.FC<HomeProps> = ({
   setOpenAddBook,
   openAddBook,
 }) => {
-  const navigate = useNavigate();
   const [isChecked, setIsChecked] = useState<boolean>(false);
   const [bookData, setBookData] = useState<BookList[]>([]);
   const [saved, setSaved] = useState<boolean>(false);
-  const [viewAboutBook, setViewAboutBook] = useState<boolean>(false);
+  // const [viewAboutBook, setViewAboutBook] = useState<boolean>(false);
   const uniqueBooksListData: BookList[] = Array.from(
     new Map(bookData.map((book) => [book.id, book])).values()
   );
   const [activeButton, setActiveButton] = useState<string>("All");
-  const { id } = useParams();
+  // const { id } = useParams();
 
   const bookStatusData: BookStatus[] = [
     { text: "Total Books", value: uniqueBooksListData.length },
@@ -92,9 +90,9 @@ const Home: React.FC<HomeProps> = ({
   };
   console.log(isChecked, "isChecked");
 
-  const handleToggle = () => {
-    setIsChecked((prev) => !prev);
-  };
+  // const handleToggle = () => {
+  //   setIsChecked((prev) => !prev);
+  // };
 
   const getFilteredBooks = () => {
     let filteredBooks = uniqueBooksListData.filter((book) =>
@@ -205,7 +203,7 @@ const Home: React.FC<HomeProps> = ({
           />
         )}
       </div>
-      <div>{viewAboutBook && <About />}</div>
+      <div>{false && <About />}</div>
     </div>
   );
 };

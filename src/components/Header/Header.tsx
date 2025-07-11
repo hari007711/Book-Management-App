@@ -1,8 +1,6 @@
-import React, { useState } from "react";
+import React from "react";
 import "./Header.scss";
 import bookIcon from "../../assets/book.png";
-import UserIcon from "../../assets/userImg.png";
-import AddBook from "../AddBook/AddBook";
 import { useLocation } from "react-router-dom";
 
 export interface BookStatus {
@@ -42,7 +40,6 @@ const Header: React.FC<HeaderProps> = ({
   searchBook,
   setSearchBook,
   setOpenAddBook,
-  openAddBook,
 }) => {
   const location = useLocation();
   const handleSearchChange = (e: React.ChangeEvent<HTMLInputElement>) => {

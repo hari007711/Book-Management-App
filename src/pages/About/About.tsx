@@ -1,9 +1,6 @@
-import React, { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 import { useNavigate, useParams } from "react-router-dom";
 import "./About.scss";
-import toRead from "../../assets/circle.png";
-import reading from "../../assets/orangeCircle.png";
-import finished from "../../assets/greenCircle.png";
 import AddBook from "../../components/AddBook/AddBook";
 
 interface Book {
