@@ -1,0 +1,238 @@
+.main-addBook {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+}
+
+.addBook-popup {
+  background-color: white;
+  padding: 25px;
+  border-radius: 8px;
+  width: 35vw;
+  max-width: 90vw;
+  position: relative;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  scrollbar-width: thin;
+  padding-right: 15px;
+}
+
+.close-btn {
+  position: absolute;
+  right: 14px;
+  background: none;
+  border: none;
+  font-size: 28px;
+  cursor: pointer;
+}
+.booktitle img {
+  height: 8px;
+  margin-left: 7px;
+  margin-top: 5px;
+}
+.booktitle {
+  display: flex;
+  margin-top: 10px;
+}
+.wrapping input {
+  width: 100%;
+  border-radius: 6px;
+  border: 1px solid grey;
+  padding: 10px;
+  font-size: 18px;
+}
+.booktitle p {
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+.genre-select {
+  width: 100%;
+  border-radius: 6px;
+  border: 1px solid grey;
+  padding: 10px;
+  font-size: 18px;
+}
+.year-input {
+  width: 40% !important;
+  height: fit-content;
+}
+.radio-btn label {
+  font-size: 18px;
+  margin-left: 6px;
+}
+.radio-btn {
+  margin-bottom: 5px;
+}
+.addBook-checkbox label {
+  font-size: 18px;
+}
+.image-preview {
+  background: #e7e7e7;
+  height: 23vh;
+  overflow: scroll;
+  overflow-x: hidden;
+  border: 1px solid grey;
+  border-radius: 5px;
+  width: 15vw;
+  text-align: center;
+  padding: 10px;
+}
+.save-btn {
+  border: none;
+  background: #2b83d1;
+  color: #fff;
+  padding: 15px;
+  border-radius: 8px;
+  font-size: 18px;
+  cursor: pointer;
+  margin-left: 10px;
+}
+.cancel-btn {
+  border: 1px solid grey;
+  padding: 15px;
+  border-radius: 8px;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.book-btns {
+  display: flex;
+  justify-content: end;
+  margin-top: 15px;
+}
+.img-input {
+  width: 82% !important;
+}
+.image-preview img {
+  height: 30vh;
+}
+.description textarea {
+  width: 100%;
+  border-radius: 6px;
+  border: 1px solid grey;
+  padding: 10px;
+  font-size: 18px;
+}
+.error-msg {
+  font-size: 16px;
+  color: red;
+}
+.error-msg-year {
+  font-size: 16px;
+  color: red;
+  margin-top: -28px;
+}
+.year-file {
+  display: flex;
+  justify-content: space-between;
+}
+.upload-file {
+  text-align: end;
+  margin-bottom: 10px;
+}
+.addBook-status {
+  display: flex;
+  justify-content: space-between;
+}
+.cancel-title {
+  display: flex;
+  align-items: center;
+}
+.prev-image-para {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media (min-width: 1000px) and (max-width: 1899px) {
+  .addBook-popup {
+    width: 42vw;
+    height: 93vh;
+  }
+  .addBook-popup {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+  .newwwwww {
+    height: 73vh;
+    overflow-y: auto;
+    scrollbar-width: thin;
+  }
+
+  .addBook-popup::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+@media (min-width: 600px) and (max-width: 999px) {
+  .addBook-popup {
+    width: 55vw;
+    overflow: scroll;
+    height: 91vh;
+  }
+  .year-file {
+    display: unset;
+    justify-content: space-between;
+  }
+  .upload-file {
+    text-align: unset;
+    margin-bottom: 10px;
+  }
+  .year-file input {
+    margin-bottom: 10px;
+  }
+  .addBook-status {
+    display: unset;
+  }
+  .addBook-checkbox {
+    margin-bottom: 10px;
+  }
+  .img-input {
+    width: 100% !important;
+  }
+  .image-preview {
+    width: 32vw;
+  }
+}
+@media (min-width: 300px) and (max-width: 599px) {
+  .addBook-popup {
+    width: 60vw;
+    overflow: scroll;
+    height: 91vh;
+  }
+  .year-file {
+    display: unset;
+    justify-content: space-between;
+  }
+  .upload-file {
+    text-align: unset;
+    margin-bottom: 10px;
+  }
+  .year-file input {
+    margin-bottom: 10px;
+  }
+  .addBook-status {
+    display: unset;
+  }
+  .addBook-checkbox {
+    margin-bottom: 10px;
+  }
+  .img-input {
+    width: 100% !important;
+  }
+  .image-preview {
+    width: 32vw;
+  }
+  .save-btn {
+    font-size: 14px;
+  }
+  .cancel-btn {
+    font-size: 14px;
+  }
+}

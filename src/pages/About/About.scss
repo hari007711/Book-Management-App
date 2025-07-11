@@ -1,0 +1,122 @@
+.about-container {
+  padding: 25px;
+  margin-top: -50px;
+}
+.breadcrumb {
+  margin-bottom: 10px;
+  font-size: 18px;
+  color: #1182ff;
+  display: flex;
+  cursor: pointer;
+}
+.book_details {
+  padding-left: 15px;
+}
+.book_details h2 {
+  font-size: 26px;
+}
+.book_details h6 {
+  font-size: 22px;
+  font-weight: 500;
+}
+.book_details p {
+  font-size: 18px;
+}
+.edit-button {
+  padding: 10px;
+  background: #00a6f8;
+  border: none;
+  border-radius: 7px;
+  font-size: 18px;
+  margin-right: 15px;
+  width: 15vw;
+  min-width: 200px;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+.delete-button {
+  padding: 10px;
+  border: none;
+  border-radius: 7px;
+  font-size: 18px;
+  margin-right: 15px;
+  width: 15vw;
+  min-width: 200px;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+.delete-button:hover {
+  background: #ff1818;
+}
+.fav-button {
+  padding: 10px;
+  border: none;
+  border-radius: 7px;
+  font-size: 18px;
+  margin-right: 15px;
+  width: 15vw;
+  min-width: 200px;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+.fav-button:hover {
+  background: orange;
+}
+.book-desc p {
+  font-size: 18px;
+  font-weight: 600;
+}
+.book-desc p span {
+  font-size: 16px;
+  font-weight: 400;
+}
+.combine-class {
+  display: flex;
+}
+.combine-class img {
+  border-radius: 8px;
+}
+.combine-class img:hover {
+  box-shadow: 5px 8px 15px -7px #888888;
+  transition: box-shadow ease-in 0.3s;
+}
+.edit-button:hover {
+  box-shadow: 5px 8px 15px -7px #888888;
+  transition: box-shadow ease-in 0.3s;
+}
+.delete-button:hover {
+  box-shadow: 5px 8px 15px -7px #888888;
+  transition: box-shadow ease-in 0.3s;
+}
+.fav-button:hover {
+  box-shadow: 5px 8px 15px -7px #888888;
+  transition: box-shadow ease-in 0.3s;
+}
+
+@media (min-width: 500px) and (max-width: 760px) {
+  .edit-button {
+    width: 100%;
+  }
+  .delete-button {
+    width: 100%;
+  }
+  .fav-button {
+    width: 100%;
+  }
+}
+@media (min-width: 300px) and (max-width: 499px) {
+  .edit-button {
+    width: 100%;
+  }
+
+  .delete-button {
+    width: 100%;
+  }
+
+  .fav-button {
+    width: 100%;
+  }
+  .combine-class {
+    display: unset;
+  }
+}
